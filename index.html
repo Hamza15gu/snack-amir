@@ -6,6 +6,21 @@
 
   <title>Menu - Snack Amir</title>
 
+  <!-- =========================
+       SOCIAL PREVIEW
+  ========================= -->
+
+  <meta property="og:title" content="Menu - Snack Amir">
+  <meta property="og:description" content="سناك أمير • أكلات سريعة طازجة • الأسعار بالدرهم">
+  <meta property="og:image" content="https://cdn.phototourl.com/anon/2026-11-14-10786700-4831-44bc-ac36-6626e19c9d89.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamza15gu.github.io/snack-amir/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menu - Snack Amir">
+  <meta name="twitter:description" content="سناك أمير • أكلات سريعة طازجة">
+  <meta name="twitter:image" content="https://cdn.phototourl.com/anon/2026-11-14-10786700-4831-44bc-ac36-6626e19c9d89.png">
+
   <style>
     :root {
       --red: #d7261e;
@@ -34,10 +49,6 @@
       padding-bottom: 100px;
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
       background: linear-gradient(
         135deg,
@@ -48,101 +59,67 @@
       color: #fff;
       text-align: center;
       padding: 56px 20px 80px;
-
       position: relative;
       overflow: hidden;
     }
 
     .hero::after {
       content: "";
-
       position: absolute;
       bottom: -1px;
       left: 0;
       right: 0;
-
       height: 40px;
-
       background: var(--cream);
-
-      clip-path: ellipse(
-        60% 100% at 50% 100%
-      );
+      clip-path: ellipse(60% 100% at 50% 100%);
     }
 
     .logo {
       display: inline-flex;
-
       align-items: center;
       justify-content: center;
-
       width: 84px;
       height: 84px;
-
       border-radius: 50%;
-
       background: var(--yellow);
       color: var(--dark);
-
       font-size: 1.8rem;
       font-weight: 900;
-
       box-shadow: 0 8px 24px rgba(0,0,0,.25);
-
       margin-bottom: 14px;
     }
 
     .hero h1 {
       font-size: 2.2rem;
       font-weight: 900;
-
       letter-spacing: .5px;
     }
 
     .hero .ar {
       font-size: 1.4rem;
-
       margin-top: 2px;
-
       opacity: .95;
     }
 
     .hero .tag {
       display: inline-block;
-
       margin-top: 14px;
-
       background: rgba(255,255,255,.18);
-
       padding: 6px 16px;
-
       border-radius: 999px;
-
       font-size: .9rem;
     }
-
-    /* =========================
-       NAVIGATION
-    ========================= */
 
     nav {
       position: sticky;
       top: 0;
-
       z-index: 10;
-
       background: var(--dark);
-
       display: flex;
-
       gap: 8px;
-
       overflow-x: auto;
-
       padding: 12px 14px;
-
       scrollbar-width: none;
-
       box-shadow: 0 4px 14px rgba(0,0,0,.2);
     }
 
@@ -152,21 +129,13 @@
 
     nav a {
       white-space: nowrap;
-
       color: #fff;
-
       text-decoration: none;
-
       padding: 8px 16px;
-
       border-radius: 999px;
-
       background: #2a2a2a;
-
       font-weight: 600;
-
       font-size: .95rem;
-
       transition: .2s;
     }
 
@@ -175,241 +144,147 @@
       color: var(--dark);
     }
 
-    /* =========================
-       SECTIONS
-    ========================= */
-
     section {
       max-width: 1100px;
-
       margin: 36px auto 0;
-
       padding: 0 16px;
     }
 
     .sec-head {
       display: flex;
-
       align-items: center;
-
       gap: 12px;
-
       margin-bottom: 18px;
     }
 
     .sec-head h2 {
       font-size: 1.5rem;
-
       font-weight: 800;
     }
 
     .line {
       flex: 1;
-
       height: 2px;
-
-      background:
-        linear-gradient(
-          to left,
-          var(--yellow),
-          transparent
-        );
+      background: linear-gradient(
+        to left,
+        var(--yellow),
+        transparent
+      );
     }
-
-    /* =========================
-       PRODUCT GRID
-    ========================= */
 
     .grid {
       display: grid;
-
       grid-template-columns:
         repeat(auto-fill, minmax(230px, 1fr));
-
       gap: 22px;
     }
 
-    /* =========================
-       PRODUCT CARD
-    ========================= */
-
     .card {
       background: #fff;
-
       border-radius: 20px;
-
       overflow: hidden;
-
-      box-shadow:
-        0 5px 18px rgba(0,0,0,.08);
-
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
       transition:
         transform .25s,
         box-shadow .25s;
-
       display: flex;
-
       flex-direction: column;
-
       min-height: 440px;
     }
 
     .card:hover {
       transform: translateY(-5px);
-
-      box-shadow:
-        0 14px 32px rgba(0,0,0,.14);
+      box-shadow: 0 14px 32px rgba(0,0,0,.14);
     }
-
-    /* =========================
-       IMAGE
-    ========================= */
 
     .img-wrap {
       position: relative;
-
       width: 100%;
-
       background: #f3e7d2;
     }
 
     .card img {
       width: 100%;
-
       height: 230px;
-
       object-fit: cover;
-
       display: block;
     }
 
     .price-tag {
       position: absolute;
-
       bottom: 12px;
       left: 12px;
-
       background: var(--yellow);
-
       color: var(--dark);
-
       font-weight: 900;
-
       font-size: 1rem;
-
       padding: 6px 14px;
-
       border-radius: 999px;
-
-      box-shadow:
-        0 4px 12px rgba(0,0,0,.22);
+      box-shadow: 0 4px 12px rgba(0,0,0,.22);
     }
-
-    /* =========================
-       CARD BODY
-    ========================= */
 
     .card .body {
       padding: 16px 17px 18px;
-
       flex: 1;
-
       display: flex;
-
       flex-direction: column;
     }
 
     .card h3 {
       font-size: 1.1rem;
-
       font-weight: 800;
-
       margin-bottom: 7px;
     }
 
     .desc {
       font-size: .88rem;
-
       color: var(--muted);
-
       line-height: 1.55;
     }
 
-    /* =========================
-       QUANTITY
-    ========================= */
-
     .qty {
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
-
       margin-top: auto;
-
       padding-top: 15px;
     }
 
     .qty button {
       width: 40px;
       height: 40px;
-
       border: none;
-
       border-radius: 50%;
-
       background: var(--red);
-
       color: #fff;
-
       font-size: 1.4rem;
-
       font-weight: 700;
-
       cursor: pointer;
-
       transition: .2s;
     }
 
     .qty button:hover {
       background: var(--red-dark);
-
       transform: scale(1.05);
     }
 
     .qty span {
       font-weight: 900;
-
       font-size: 1.15rem;
-
       min-width: 35px;
-
       text-align: center;
     }
 
-    /* =========================
-       CONTACT
-    ========================= */
-
     .contact {
       background: var(--dark);
-
       color: #fff;
-
       border-radius: 22px;
-
       padding: 34px 22px;
-
       margin: 40px auto 0;
-
       max-width: 1100px;
-
       display: grid;
-
       grid-template-columns:
         repeat(auto-fit, minmax(220px, 1fr));
-
       gap: 22px;
     }
 
@@ -419,42 +294,30 @@
 
     .contact .ico {
       font-size: 1.7rem;
-
       margin-bottom: 6px;
     }
 
     .contact h3 {
       font-size: .95rem;
-
       color: var(--yellow);
-
       margin-bottom: 7px;
     }
 
     .contact a,
     .contact p {
       color: #fff;
-
       text-decoration: none;
-
       font-size: 1rem;
     }
 
     .btn {
       display: inline-block;
-
       margin-top: 9px;
-
       padding: 10px 18px;
-
       border-radius: 12px;
-
       background: var(--red);
-
       color: #fff;
-
       font-weight: 700;
-
       text-decoration: none;
     }
 
@@ -462,56 +325,30 @@
       background: #25d366;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
-
     footer {
       text-align: center;
-
       padding: 28px 16px 40px;
-
       color: var(--muted);
-
       font-size: .85rem;
     }
 
-    /* =========================
-       FLOATING CART
-    ========================= */
-
     .cart {
       position: fixed;
-
       left: 12px;
       right: 12px;
       bottom: 12px;
-
       z-index: 20;
-
       background: var(--dark);
-
       color: #fff;
-
       border-radius: 18px;
-
       padding: 13px 16px;
-
       display: flex;
-
       align-items: center;
-
       gap: 12px;
-
-      box-shadow:
-        0 10px 30px rgba(0,0,0,.35);
-
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
       transform: translateY(160%);
-
       transition: transform .3s;
-
       max-width: 620px;
-
       margin: 0 auto;
     }
 
@@ -525,53 +362,33 @@
 
     .cart small {
       display: block;
-
       opacity: .75;
     }
 
     .cart strong {
       font-size: 1.15rem;
-
       color: var(--yellow);
     }
 
     .cart button {
       background: #25d366;
-
       color: #fff;
-
       border: none;
-
       padding: 12px 18px;
-
       border-radius: 12px;
-
       font-weight: 800;
-
       cursor: pointer;
-
       font-size: .95rem;
     }
 
-    /* =========================
-       MODAL
-    ========================= */
-
     .modal {
       position: fixed;
-
       inset: 0;
-
       background: rgba(0,0,0,.55);
-
       display: none;
-
       align-items: center;
-
       justify-content: center;
-
       z-index: 30;
-
       padding: 16px;
     }
 
@@ -581,59 +398,37 @@
 
     .modal .box {
       background: #fff;
-
       border-radius: 20px;
-
       padding: 26px 22px;
-
       max-width: 420px;
-
       width: 100%;
-
       text-align: center;
     }
 
     .modal h3 {
       font-size: 1.4rem;
-
       margin-bottom: 10px;
     }
 
     .modal p {
       color: var(--muted);
-
       margin-bottom: 14px;
-
       white-space: pre-line;
-
       text-align: right;
-
       background: var(--cream);
-
       padding: 12px;
-
       border-radius: 12px;
     }
 
     .modal button {
       background: var(--red);
-
       color: #fff;
-
       border: none;
-
       padding: 10px 22px;
-
       border-radius: 12px;
-
       font-weight: 700;
-
       cursor: pointer;
     }
-
-    /* =========================
-       MOBILE
-    ========================= */
 
     @media (max-width: 600px) {
 
@@ -648,13 +443,11 @@
       .grid {
         grid-template-columns:
           repeat(2, minmax(0, 1fr));
-
         gap: 12px;
       }
 
       .card {
         min-height: 390px;
-
         border-radius: 16px;
       }
 
@@ -676,14 +469,12 @@
 
       .price-tag {
         font-size: .85rem;
-
         padding: 5px 10px;
       }
 
       .qty button {
         width: 34px;
         height: 34px;
-
         font-size: 1.2rem;
       }
 
@@ -693,7 +484,6 @@
 
       .cart button {
         padding: 11px 13px;
-
         font-size: .82rem;
       }
     }
@@ -717,10 +507,6 @@
 
 <body>
 
-  <!-- =========================
-       HERO
-  ========================= -->
-
   <header class="hero">
 
     <div class="logo">
@@ -741,45 +527,17 @@
 
   </header>
 
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
-
   <nav>
 
-    <a href="#tacos">
-      Tacos
-    </a>
-
-    <a href="#salades">
-      Salades
-    </a>
-
-    <a href="#sandwich">
-      Sandwich
-    </a>
-
-    <a href="#pizzas">
-      Pizzas
-    </a>
-
-    <a href="#burgers">
-      Burgers
-    </a>
-
-    <a href="#jus">
-      Jus
-    </a>
-
-    <a href="#contact">
-      اتصل بنا
-    </a>
+    <a href="#tacos">Tacos</a>
+    <a href="#salades">Salades</a>
+    <a href="#sandwich">Sandwich</a>
+    <a href="#pizzas">Pizzas</a>
+    <a href="#burgers">Burgers</a>
+    <a href="#jus">Jus</a>
+    <a href="#contact">اتصل بنا</a>
 
   </nav>
-
-  <!-- =========================
-       TACOS
-  ========================= -->
 
   <section id="tacos">
 
@@ -791,155 +549,81 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-          <img
-            src="https://yourimageshare.com/ib/bjSApxlXrm.jpg"
-            alt="Tacos Mixte"
-          >
-
-          <span class="price-tag">
-            55 MAD
-          </span>
+          <img src="https://yourimageshare.com/ib/bjSApxlXrm.jpg" alt="Tacos Mixte">
+          <span class="price-tag">55 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Tacos Mixte
-          </h3>
-
+          <h3>Tacos Mixte</h3>
           <div class="desc">
             Viande hachée, poulet, charcuterie,
             frites, fromage, sauce au choix
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-          <img
-            src="https://yourimageshare.com/ib/ikkQwoWvCf.jpg"
-            alt="Tacos Poulet"
-          >
-
-          <span class="price-tag">
-            49 MAD
-          </span>
+          <img src="https://yourimageshare.com/ib/ikkQwoWvCf.jpg" alt="Tacos Poulet">
+          <span class="price-tag">49 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Tacos Poulet
-          </h3>
-
+          <h3>Tacos Poulet</h3>
           <div class="desc">
             Poulet, frites, fromage,
             sauce au choix
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-          <img
-            src="https://yourimageshare.com/ib/6lDnzZ8U5H.jpg"
-            alt="Tacos Nuggets"
-          >
-
-          <span class="price-tag">
-            55 MAD
-          </span>
+          <img src="https://yourimageshare.com/ib/6lDnzZ8U5H.jpg" alt="Tacos Nuggets">
+          <span class="price-tag">55 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Tacos Nuggets
-          </h3>
-
+          <h3>Tacos Nuggets</h3>
           <div class="desc">
             Nuggets, frites, fromage,
             sauce au choix
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-          <img
-            src="https://yourimageshare.com/ib/OoHwXWqDIf.jpg"
-            alt="Tacos Viande Hachée"
-          >
-
-          <span class="price-tag">
-            49 MAD
-          </span>
+          <img src="https://yourimageshare.com/ib/OoHwXWqDIf.jpg" alt="Tacos Viande Hachée">
+          <span class="price-tag">49 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Tacos Viande Hachée
-          </h3>
-
+          <h3>Tacos Viande Hachée</h3>
           <div class="desc">
             Viande hachée, frites, fromage,
             sauce au choix
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-          <img
-            src="https://yourimageshare.com/ib/kOQclOPOxY.jpg"
-            alt="Tacos Cordon Bleu"
-          >
-
-          <span class="price-tag">
-            55 MAD
-          </span>
+          <img src="https://yourimageshare.com/ib/kOQclOPOxY.jpg" alt="Tacos Cordon Bleu">
+          <span class="price-tag">55 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Tacos Cordon Bleu
-          </h3>
-
+          <h3>Tacos Cordon Bleu</h3>
           <div class="desc">
             Tacos cordon bleu
           </div>
-
         </div>
-
       </div>
 
     </div>
   </section>
-
-
-  <!-- =========================
-       SALADES
-  ========================= -->
 
   <section id="salades">
 
@@ -951,43 +635,22 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/674a3bP63F.jpg"
-            alt="Salade Nicoise"
-          >
-
-          <span class="price-tag">
-            35 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/674a3bP63F.jpg" alt="Salade Nicoise">
+          <span class="price-tag">35 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Salade Nicoise
-          </h3>
-
+          <h3>Salade Nicoise</h3>
           <div class="desc">
             Thon, riz, légumes, oeufs,
             maïs, mayonnaise chamali
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
-
-
-  <!-- =========================
-       SANDWICH
-  ========================= -->
 
   <section id="sandwich">
 
@@ -999,136 +662,67 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/NqSpY4Ipn1.jpg"
-            alt="Sandwich Mixte"
-          >
-
-          <span class="price-tag">
-            40 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/NqSpY4Ipn1.jpg" alt="Sandwich Mixte">
+          <span class="price-tag">40 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Sandwich Mixte
-          </h3>
-
+          <h3>Sandwich Mixte</h3>
           <div class="desc">
             Laitue, tomate, poulet,
             viande hachée, fromage
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/X4XMfnXS8i.jpg"
-            alt="Sandwich Thon"
-          >
-
-          <span class="price-tag">
-            25 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/X4XMfnXS8i.jpg" alt="Sandwich Thon">
+          <span class="price-tag">25 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Sandwich Thon
-          </h3>
-
+          <h3>Sandwich Thon</h3>
           <div class="desc">
             Laitue, tomate, riz,
             pommes de terre, thon, fromage
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/7JDOK3Qstx.jpg"
-            alt="Sandwich Viande Hachée"
-          >
-
-          <span class="price-tag">
-            33 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/7JDOK3Qstx.jpg" alt="Sandwich Viande Hachée">
+          <span class="price-tag">33 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Sandwich Viande Hachée
-          </h3>
-
+          <h3>Sandwich Viande Hachée</h3>
           <div class="desc">
             Laitue, tomate,
             viande hachée, fromage
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/eFlT9AaRQE.jpg"
-            alt="Sandwich Poulet"
-          >
-
-          <span class="price-tag">
-            33 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/eFlT9AaRQE.jpg" alt="Sandwich Poulet">
+          <span class="price-tag">33 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Sandwich Poulet
-          </h3>
-
+          <h3>Sandwich Poulet</h3>
           <div class="desc">
             Laitue, tomate,
             poulet, fromage
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
-
-
-  <!-- =========================
-       PIZZAS
-  ========================= -->
 
   <section id="pizzas">
 
@@ -1140,166 +734,81 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/AEBO17eXEw.jpg"
-            alt="Pizza Margarita"
-          >
-
-          <span class="price-tag">
-            39 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/AEBO17eXEw.jpg" alt="Pizza Margarita">
+          <span class="price-tag">39 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Pizza Margarita
-          </h3>
-
+          <h3>Pizza Margarita</h3>
           <div class="desc">
             Sauce tomate, mozzarella
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/1fiQ5GID64.jpg"
-            alt="Pizza Thon"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/1fiQ5GID64.jpg" alt="Pizza Thon">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Pizza Thon
-          </h3>
-
+          <h3>Pizza Thon</h3>
           <div class="desc">
             Sauce tomate, mozzarella,
             thon, poivron
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/PIxlpoLal5.jpg"
-            alt="Pizza Viande Hachée"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/PIxlpoLal5.jpg" alt="Pizza Viande Hachée">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Pizza Viande Hachée
-          </h3>
-
+          <h3>Pizza Viande Hachée</h3>
           <div class="desc">
             Sauce tomate, mozzarella,
             viande hachée, poivron
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/PqK7TTzJnH.jpg"
-            alt="Pizza Charcuterie"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/PqK7TTzJnH.jpg" alt="Pizza Charcuterie">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Pizza Charcuterie
-          </h3>
-
+          <h3>Pizza Charcuterie</h3>
           <div class="desc">
             Sauce tomate, mozzarella,
             charcuterie
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/mB0c437Asw.jpg"
-            alt="Pizza Poulet"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/mB0c437Asw.jpg" alt="Pizza Poulet">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Pizza Poulet
-          </h3>
-
+          <h3>Pizza Poulet</h3>
           <div class="desc">
             Sauce tomate, mozzarella,
             poulet, poivron
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
-
-
-  <!-- =========================
-       BURGERS
-  ========================= -->
 
   <section id="burgers">
 
@@ -1311,105 +820,52 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/EEKmtAzKuf.jpg"
-            alt="Cheese Burger"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/EEKmtAzKuf.jpg" alt="Cheese Burger">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Cheese Burger
-          </h3>
-
+          <h3>Cheese Burger</h3>
           <div class="desc">
             Laitue, tomate,
             viande hachée, fromage
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/dOcXTs0Hp1.jpg"
-            alt="Egg Burger"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/dOcXTs0Hp1.jpg" alt="Egg Burger">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Egg Burger
-          </h3>
-
+          <h3>Egg Burger</h3>
           <div class="desc">
             Laitue, tomate,
             viande hachée, oeuf, fromage
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/xiUd7VY97f.jpg"
-            alt="Chicken Burger"
-          >
-
-          <span class="price-tag">
-            45 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/xiUd7VY97f.jpg" alt="Chicken Burger">
+          <span class="price-tag">45 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Chicken Burger
-          </h3>
-
+          <h3>Chicken Burger</h3>
           <div class="desc">
             Laitue, tomate,
             poulet, fromage
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
-
-
-  <!-- =========================
-       JUS
-  ========================= -->
 
   <section id="jus">
 
@@ -1421,174 +877,85 @@
     <div class="grid">
 
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/OrE2nGJnYG.jpg"
-            alt="Fraise"
-          >
-
-          <span class="price-tag">
-            25 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/OrE2nGJnYG.jpg" alt="Fraise">
+          <span class="price-tag">25 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Fraise
-          </h3>
-
+          <h3>Fraise</h3>
           <div class="desc">
             Fraise orange
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/jUkHEewJyN.jpg"
-            alt="Kiwi"
-          >
-
-          <span class="price-tag">
-            22 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/jUkHEewJyN.jpg" alt="Kiwi">
+          <span class="price-tag">22 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Kiwi
-          </h3>
-
+          <h3>Kiwi</h3>
           <div class="desc">
             Kiwi à orange
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/OydrRSyn6m.jpg"
-            alt="Mangue"
-          >
-
-          <span class="price-tag">
-            25 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/OydrRSyn6m.jpg" alt="Mangue">
+          <span class="price-tag">25 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Mangue
-          </h3>
-
+          <h3>Mangue</h3>
           <div class="desc">
             Mangue à l'orange
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/91tDs4gY2z.jpg"
-            alt="Banane"
-          >
-
-          <span class="price-tag">
-            16 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/91tDs4gY2z.jpg" alt="Banane">
+          <span class="price-tag">16 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Banane
-          </h3>
-
+          <h3>Banane</h3>
           <div class="desc">
             Banane au lait
           </div>
-
         </div>
-
       </div>
 
-
       <div class="card">
-
         <div class="img-wrap">
-
-          <img
-            src="https://yourimageshare.com/ib/nIUM9VoPAO.jpg"
-            alt="Avocat"
-          >
-
-          <span class="price-tag">
-            16 MAD
-          </span>
-
+          <img src="https://yourimageshare.com/ib/nIUM9VoPAO.jpg" alt="Avocat">
+          <span class="price-tag">16 MAD</span>
         </div>
 
         <div class="body">
-
-          <h3>
-            Avocat
-          </h3>
-
+          <h3>Avocat</h3>
           <div class="desc">
             Avocat au lait
           </div>
-
         </div>
-
       </div>
 
     </div>
-
   </section>
-
-
-  <!-- =========================
-       CONTACT
-  ========================= -->
 
   <section id="contact" class="contact">
 
     <div class="item">
 
-      <div class="ico">
-        📞
-      </div>
+      <div class="ico">📞</div>
 
-      <h3>
-        الهاتف
-      </h3>
+      <h3>الهاتف</h3>
 
       <a href="tel:+212659134428">
         +212 6 59 13 44 28
@@ -1596,25 +963,17 @@
 
       <br>
 
-      <a
-        class="btn"
-        href="tel:+212659134428"
-      >
+      <a class="btn" href="tel:+212659134428">
         اتصل الآن
       </a>
 
     </div>
 
-
     <div class="item">
 
-      <div class="ico">
-        💬
-      </div>
+      <div class="ico">💬</div>
 
-      <h3>
-        واتساب
-      </h3>
+      <h3>واتساب</h3>
 
       <p>
         اطلب بسهولة
@@ -1629,16 +988,11 @@
 
     </div>
 
-
     <div class="item">
 
-      <div class="ico">
-        📍
-      </div>
+      <div class="ico">📍</div>
 
-      <h3>
-        العنوان
-      </h3>
+      <h3>العنوان</h3>
 
       <p>
         Lot Kasbat El Amine، Rue 3<br>
@@ -1649,24 +1003,11 @@
 
   </section>
 
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
   <footer>
     الأسعار حسب قائمة Google Maps • سناك أمير
   </footer>
 
-
-  <!-- =========================
-       CART
-  ========================= -->
-
-  <div
-    class="cart"
-    id="cart"
-  >
+  <div class="cart" id="cart">
 
     <div class="info">
 
@@ -1686,15 +1027,7 @@
 
   </div>
 
-
-  <!-- =========================
-       MODAL
-  ========================= -->
-
-  <div
-    class="modal"
-    id="modal"
-  >
+  <div class="modal" id="modal">
 
     <div class="box">
 
@@ -1712,11 +1045,6 @@
 
   </div>
 
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
-
   <script>
 
     const PHONE = "212659134428";
@@ -1726,7 +1054,6 @@
     const cards =
       document.querySelectorAll(".card");
 
-
     cards.forEach((card, i) => {
 
       const tag =
@@ -1735,11 +1062,9 @@
       const name =
         card.querySelector("h3");
 
-
       if (!tag || !name) {
         return;
       }
-
 
       const price =
         parseInt(
@@ -1747,10 +1072,8 @@
           10
         );
 
-
       const id =
         "p" + i;
-
 
       cart[id] = {
 
@@ -1765,14 +1088,11 @@
 
       };
 
-
       const box =
         document.createElement("div");
 
-
       box.className =
         "qty";
-
 
       box.innerHTML = `
         <button type="button">−</button>
@@ -1780,22 +1100,17 @@
         <button type="button">+</button>
       `;
 
-
       const buttons =
         box.querySelectorAll("button");
-
 
       const minus =
         buttons[0];
 
-
       const plus =
         buttons[1];
 
-
       const out =
         box.querySelector("span");
-
 
       function update() {
 
@@ -1805,7 +1120,6 @@
         render();
 
       }
-
 
       minus.addEventListener(
         "click",
@@ -1822,7 +1136,6 @@
         }
       );
 
-
       plus.addEventListener(
         "click",
         () => {
@@ -1834,13 +1147,11 @@
         }
       );
 
-
       card
         .querySelector(".body")
         .appendChild(box);
 
     });
-
 
     function render() {
 
@@ -1849,7 +1160,6 @@
           .filter(
             p => p.qty > 0
           );
-
 
       const total =
         items.reduce(
@@ -1860,7 +1170,6 @@
           0
         );
 
-
       const count =
         items.reduce(
           (sum, p) =>
@@ -1869,18 +1178,15 @@
           0
         );
 
-
       document.getElementById(
         "total"
       ).textContent =
         total + " MAD";
 
-
       document.getElementById(
         "count"
       ).textContent =
         count + " منتجات";
-
 
       document.getElementById(
         "cart"
@@ -1889,14 +1195,12 @@
         count > 0
       );
 
-
       return {
         items,
         total
       };
 
     }
-
 
     document
       .getElementById("order")
@@ -1909,11 +1213,9 @@
             total
           } = render();
 
-
           if (!items.length) {
             return;
           }
-
 
           const lines =
             items.map(
@@ -1930,14 +1232,12 @@
                 " MAD"
             );
 
-
           const msg =
             "مرحباً، أريد أن أطلب من سناك أمير:\n" +
             lines.join("\n") +
             "\n\nالمجموع: " +
             total +
             " MAD";
-
 
           window.open(
             "https://wa.me/" +
@@ -1946,7 +1246,6 @@
             encodeURIComponent(msg),
             "_blank"
           );
-
 
           document.getElementById(
             "thanks"
@@ -1957,14 +1256,12 @@
             " MAD.\n" +
             "سنتواصل معك قريباً لتأكيد الطلب. بالهناء والشفاء!";
 
-
           document.getElementById(
             "modal"
           ).classList.add("show");
 
         }
       );
-
 
     document
       .getElementById("close")
